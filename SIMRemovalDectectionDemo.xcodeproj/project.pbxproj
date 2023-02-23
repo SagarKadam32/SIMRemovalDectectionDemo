@@ -11,14 +11,32 @@
 		969F596B299F7C470097D905 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969F596A299F7C470097D905 /* ContentView.swift */; };
 		969F596D299F7C480097D905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969F596C299F7C480097D905 /* Assets.xcassets */; };
 		969F5970299F7C480097D905 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969F596F299F7C480097D905 /* Preview Assets.xcassets */; };
+		969F5979299F7CC70097D905 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969F5977299F7CBF0097D905 /* CoreTelephony.framework */; };
+		969F597A299F7CC70097D905 /* CoreTelephony.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 969F5977299F7CBF0097D905 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		969F597B299F7CC70097D905 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				969F597A299F7CC70097D905 /* CoreTelephony.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9648C86229A78FD6001E869B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		969F5965299F7C470097D905 /* SIMRemovalDectectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIMRemovalDectectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969F5968299F7C470097D905 /* SIMRemovalDectectionDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMRemovalDectectionDemoApp.swift; sourceTree = "<group>"; };
 		969F596A299F7C470097D905 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		969F596C299F7C480097D905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		969F596F299F7C480097D905 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		969F5977299F7CBF0097D905 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969F5979299F7CC70097D905 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +56,7 @@
 			children = (
 				969F5967299F7C470097D905 /* SIMRemovalDectectionDemo */,
 				969F5966299F7C470097D905 /* Products */,
+				969F5976299F7CBF0097D905 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +87,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		969F5976299F7CBF0097D905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9648C86229A78FD6001E869B /* CoreServices.framework */,
+				969F5977299F7CBF0097D905 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +106,7 @@
 				969F5961299F7C470097D905 /* Sources */,
 				969F5962299F7C470097D905 /* Frameworks */,
 				969F5963299F7C470097D905 /* Resources */,
+				969F597B299F7CC70097D905 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
